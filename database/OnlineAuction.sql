@@ -31,6 +31,7 @@ create table if not exists Users
    price int not null,
    product_image blob not null,
    userinfo int(10) not null references Users(user_id),
+   description varchar(100) not null
    primary key(product_id)
    );
    
