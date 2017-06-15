@@ -1,4 +1,5 @@
 <?php
+    // script for login.php authentication//
 	session_start();
 	include 'database.php';
 
@@ -12,11 +13,14 @@
 		
 		if(mysqli_num_rows($result))
 		{
-			$_SESSION['user']=true        
+			// if any result exist means user logged in sucessfully//
+			$arr = mysqli_fetch_assoc($result);
+			$_SESSION['login_id']=$arr['login_id'];      
 			header("Location:home.php");
 		}
 		else
 		{
+			// user not present //
 			header("Location:register.php");
 
 		}

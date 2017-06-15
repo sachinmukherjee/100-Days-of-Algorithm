@@ -1,4 +1,5 @@
 <?php 
+     // script for authentication of registration.php//
      session_start();
      include 'database.php';
      if(isset($_POST['submit']) && isset($_POST['email']) && isset($_POST['password']))
@@ -13,7 +14,7 @@
      	if(mysqli_num_rows($result))
      	{
      		// condition email id already exists//
-     		header("Location:register.php");
+     		header("Location:login.php");
      	}
 
      	else
