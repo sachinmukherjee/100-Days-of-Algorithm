@@ -1,5 +1,3 @@
-//Common database file for// 
-
 <?php
      $servername = "localhost";
      $username = "root";
@@ -10,5 +8,4 @@
 
      if(!$conn)
      	die("Could not connect". mysqli_error($conn));
-
 ?>
