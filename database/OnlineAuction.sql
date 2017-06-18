@@ -1,8 +1,12 @@
+create database if not exists OnlineAuction;
+
+use OnlineAuction;
+
 create table if not exists Login
 (
   login_id int(10) not null auto_increment,
-  email varchar(20) not null,
-  pass varchar(20) not null,
+  email varchar(40) not null,
+  pass varchar(40) not null,
   primary key(login_id,email)
 );
 
@@ -12,9 +16,9 @@ create table if not exists Users
   
   user_id int(10) not null auto_increment,
   login_id int(10) not null references Login(Login),
-  profile_pic blob not null,
+  profile_pic varchar(100) not null,
   full_name varchar(30) not null,
-  email varchar(20) not null references Login(email),
+  email varchar(40) not null references Login(email),
   city char(20) not null,
   state char(20) not null,
   gender char(2) not null,
@@ -29,9 +33,9 @@ create table if not exists Users
    dat date not null,
    tim time not null,
    price int not null,
-   product_image blob not null,
+   product_image varchar(100) not null,
    userinfo int(10) not null references Users(user_id),
-   description varchar(100) not null
+   description varchar(100) not null,
    primary key(product_id)
    );
    
@@ -39,7 +43,8 @@ create table if not exists Users
    create table if not exists Purchased
    (
      user_id int(10) not null references Users(user_id),
-     product_id int(10) not null references Product(product_id)
+     product_id int(10) not null references Product(product_id),
+     price int(10) not null
    );
 
    create table if not exists Saved
