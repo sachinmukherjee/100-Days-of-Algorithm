@@ -20,8 +20,11 @@
 <label>Product Description</label>
 <input type="text" name="description"><br><br>
 
-<label>Date</label>
-<input type="date" name="date"><br><br>
+<label>Starting Date</label>
+<input type="date" name="initialdate"><br><br>
+
+<label>Final Date</label>
+<input type="date" name="finaldate"><br><br>
 
 <label>Starting Price</label>
 <input type="text" name="price"><br><br>
