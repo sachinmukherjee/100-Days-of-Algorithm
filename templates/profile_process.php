@@ -34,6 +34,10 @@
             else 
             {
               header("Location:view_profile.php");
+              $query = "select user_id from Users where login_id = $login_id;";
+              $result=mysqli_query($conn,$query);
+              $arr = mysqli_fetch_assoc($result);
+              $_SESSION['user_id'] = $arr['user_id'];
             }
      }
 

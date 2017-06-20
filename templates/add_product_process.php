@@ -16,9 +16,11 @@
           $user_id = $_SESSION['user_id'];
 
           // for product image processing//
-          $product_pic = basename($_FILES['product']['name']);
-          $location = "/var/www/html/OnlineAuction/templates/products/" .basename($_FILES['product']['name']);
-          move_uploaded_file($_FILES['product']['temp_name'],$location);   
+
+          echo $temp_name = $_FILES['product']['tmp_name'];
+          echo $product_pic = basename($_FILES['product']['name']);
+          echo $location = '/var/www/html/OnlineAuction/templates/products/' .basename($_FILES['product']['name']);
+          move_uploaded_file($temp_name,$location);
 
           $query = "insert into Product values(null,'$product_name','$initialdate',$price,'$product_pic','$user_id','$description','$finaldate');";
           $result=mysqli_query($conn, $query);
