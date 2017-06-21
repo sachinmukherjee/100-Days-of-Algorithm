@@ -1,4 +1,5 @@
 <?php 
+  // script for upcoming action
   session_start();
   include 'database.php';
 ?>

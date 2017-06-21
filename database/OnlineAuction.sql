@@ -43,15 +43,12 @@ create table if not exists Users
    create table if not exists Purchased
    (
      user_id int(10) not null references Users(user_id),
-     product_id int(10) not null references Product(product_id),
-     price int(10) not null
+     product_name char(30) not null,
+     price int(10) not null,
+     paid boolean not null
    );
 
-   create table if not exists Saved
-   (
-   product_saved int(10) not null references Product(product_id),
-   user_saved int(10) not null references Users(user_id)
-   );
+
    
   
     create table if not exists Bids
