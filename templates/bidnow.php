@@ -52,7 +52,7 @@ include 'database.php';
 	     	{
 	     		$mybid = $_GET['mybid'];
 	     		$user_id = $_SESSION['user_id'];
-	     		$query = "insert into Bids values($product_id,,$price,$mybid,$user_id);";
+	     		$query = "insert into Bids values($product_id,'$product_name',$price,$mybid,$user_id);";
 	     	}
 	     	else 
 	     	{

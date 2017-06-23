@@ -22,7 +22,7 @@
           echo $location = '/var/www/html/OnlineAuction/templates/products/' .basename($_FILES['product']['name']);
           move_uploaded_file($temp_name,$location);
 
-          $query = "insert into Product values(null,'$product_name','$initialdate',$price,'$product_pic','$user_id','$description','$finaldate');";
+          $query = "insert into Product values(null,'$product_name','$initialdate',$price,'$product_pic','$seller_id','$description','$finaldate');";
           $result=mysqli_query($conn, $query);
      }
 

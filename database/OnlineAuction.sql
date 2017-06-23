@@ -37,7 +37,7 @@ create table if not exists Users
    sellerinfo int(10) not null references Seller(fullname),
    description varchar(100) not null,
    purchased boolean not null,
-   primary key(product_id)
+   primary key(product_id,product_name)
    );
    
    
@@ -57,7 +57,8 @@ create table if not exists Users
     product_id int(10) not null references Product(product_id),
     initial_price int not null,
     final_price int not null,
-    user_id int(10) not null references User(user_id)
+    user_id int(10) not null references User(user_id),
+    product_name char(40) not null references Product(product_name)
     );
 
    create table Seller
