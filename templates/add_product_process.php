@@ -13,7 +13,7 @@
      	$finaldate = date('Y-m-d',strtotime($_POST['finaldate']));
      	$price = $_POST['price'];
           $initialdate = date('Y-m-d',strtotime($_POST['initialdate']));
-          $user_id = $_SESSION['user_id'];
+          $seller_id = $_SESSION['seller_id'];
 
           // for product image processing//
 

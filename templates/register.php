@@ -10,6 +10,6 @@
 <input type="text" name="email"><br><br>
 <label for="password" name="password">Password</label>
 <input type="password" name="password"><br><br>
-<input type="submit" name="submit">
+<button type="submit" name="submit" value="submit">Register</button>
 </body>
 </html>

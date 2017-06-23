@@ -8,7 +8,6 @@
 
 <div id="navigation">
 <a href="view_profile.php">Profile</a>
-<a href="add_product.php">Add Product</a>
     <div class="dropdown">
 	    <p>Auctions</p>
            <div class="dropdown-content">

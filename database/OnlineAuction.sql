@@ -34,8 +34,9 @@ create table if not exists Users
    finaldate date not null,
    price int not null,
    product_image varchar(100) not null,
-   userinfo int(10) not null references Users(user_id),
+   sellerinfo int(10) not null references Seller(fullname),
    description varchar(100) not null,
+   purchased boolean not null,
    primary key(product_id)
    );
    
@@ -58,3 +59,13 @@ create table if not exists Users
     final_price int not null,
     user_id int(10) not null references User(user_id)
     );
+
+   create table Seller
+  ( 
+   id int(10) not null auto_increment,
+   username varchar(30) not null,
+   pass varchar(30) not null,
+   fullname char(60) not null, 
+   address varchar(100) not null,
+   primary key(id,fullname)
+  );
