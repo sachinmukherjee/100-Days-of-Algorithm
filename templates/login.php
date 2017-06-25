@@ -25,9 +25,9 @@
 <button type="submit" name="Login" value="submit">Login</button>
 
 </form>
-</div>
 
-<a href="login_seller.php">Seller Login</a>
-<p>If new user then <a href="register.php">Click here</a> to register</p>
+<a class="seller" href="login_seller.php">Seller Login</a>
+<p>If new user then <a class="register" href="register.php">Click here</a> to register</p>
+</div>
 </body>
 </html>
