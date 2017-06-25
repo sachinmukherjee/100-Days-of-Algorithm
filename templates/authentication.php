@@ -3,7 +3,7 @@
 	session_start();
 	include 'database.php';
 
-	if(isset($_POST['submit']) && isset($_POST['email']) && isset($_POST['password']))
+	if(isset($_POST['Login']) && isset($_POST['email']) && isset($_POST['password']))
 	{
 		$email = $_POST['email'];
 		$password = $_POST['password'];

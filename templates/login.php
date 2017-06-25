@@ -2,17 +2,32 @@
 <html>
 <head>
 	<title>Please Login</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
+
+
+<div class="login">
 <h3>Login</h3>
+
 <form action="authentication.php" method="post">
-<label for="email">Email id</label>
-&nbsp;&nbsp;<input type="text" name="email">&nbsp;<span style="color: red;">* field cannot be empty</span><br><br>
-<label for="password">Password</label>
-<input type="password" name="password">&nbsp;<span style="color: red;">* field cannot be empty</span><br><br>
-<button type="submit" name="submit" value="submit">Login</button>
+<table>
+<tr>
+<td><label for="email">Email id</label></td>
+<td><input type="email" name="email"></td><td><span style="color: red;">* field cannot be empty</span></td>
+</tr>
+
+<tr>
+<td><label for="password">Password</label></td>
+<td><input type="password" name="password"></td><td><span style="color: red;">* field cannot be empty</span></td>
+</tr>
+</table>
+<button type="submit" name="Login" value="submit">Login</button>
+
 </form>
+</div>
+
 <a href="login_seller.php">Seller Login</a>
-<p>if new user then <a href="register.php">Click here</a> to register</p>
+<p>If new user then <a href="register.php">Click here</a> to register</p>
 </body>
 </html>
