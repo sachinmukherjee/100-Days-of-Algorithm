@@ -5,38 +5,57 @@
 <html>
 <head>
 	<title>Profile </title>
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
 </head>
 <body>
+
+<div class="profile">
+
 <form action="profile_process.php" method="post" enctype="multipart/form-data">
 
-	<label for="profile_pic"> Profile Pic</label><br>
+<h3> Enter the details</h3>
 
-	<input type="file" name="profile_pic"><span style="color: red;">*</span><br><br>
+<table>
 
-	<label for="fullname">Fullname</label>
-	<input type="text" name="fullname"><span style="color: red;">*</span><br><br>
+<tr>
+	<td><label for="profile_pic"> Profile Pic</label></td>
 
-	<label for="email">Email</label>
-	<input type="email" name="email"><span style="color: red;">*</span><br><br>
+	<td><input type="file" name="profile_pic"></td><td><span style="color: red;">*</span></td>
+</tr>
+<tr>
+	<td><label for="fullname">Fullname</label></td>
+	<td><input type="text" name="fullname"></td><td><span style="color: red;">*</span></td>
+</tr>
+<tr>
+	<td><label for="email">Email</label></td>
+	<td><input type="email" name="email"></td><td><span style="color: red;">*</span></td>
+</tr>
+<tr>
+	<td><label>City</label></td>
+	<td><input type="text" name="city"></td><td><span style="color: red;">*</span></td>
+</tr>
+<tr>
+    <td><label>State</label></td>
+	<td><input type="text" name="state"></td><td><span style="color: red;">*</span></td>
+</tr>
+<tr>
+	<td><label>Phone Number</label></td>
+	<td><input type="text" name="phone_number"></td><td><span style="color: red;">*</span></td>
+</tr>
+<tr>
+	<td><label>Gender</label></td>
 
-	<label>City</label>
-	<input type="text" name="city"><span style="color: red;">*</span><br><br>
-
-	<label>State</label>
-	<input type="text" name="state"><span style="color: red;">*</span><br><br>
-
-	<label>Phone Number</label>
-	<input type="text" name="phone_number"><span style="color: red;">*</span><br><br>
-
-	<label>Gender</label>
-	<input type="radio" name="gender" value="Male">Male
-	<input type="radio" name="gender" value="Female">Female
-	<span style="color: red;">*</span>
+	<td><input type="radio" name="gender" value="Male">Male
+	<input type="radio" name="gender" value="Female">Female</td>
+	<td><span style="color: red;">*</span></td>
+</tr>
+</table>
 
 	<p style="color: red;">* field cannot be empty</p>
+
 	<input type="submit" name="Save">
-
+	
 </form>
-
+</div>>
 </body>
 </html>

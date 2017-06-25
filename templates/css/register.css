@@ -33,7 +33,7 @@ button[type="submit"]
 	font-weight: bolder;
 	height: 0.7cm;
 	top:0.5cm;
-	background-color: lightblue;
+	background-color: silver;
 }
 input[type="email"],input[type="password"]
 {
@@ -41,6 +41,7 @@ input[type="email"],input[type="password"]
 	height:0.7cm;
 	width: 8cm;
 	font-weight: normal;
+	background-color: silver;
 
 }
 table,td
