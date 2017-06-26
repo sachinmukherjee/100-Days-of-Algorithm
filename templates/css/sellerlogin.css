@@ -2,7 +2,7 @@ body
 {
 	background-color: lightgreen;
 }
-.login
+.sellerlogin
 {
 	background-color: lightgreen;
 	position: relative;
@@ -16,10 +16,10 @@ body
 
 
 }
-h3
+h2
 {
 	position: relative;
-	left: 4.5cm;
+	left: 4cm;
 	font-size: 0.9cm;
 }
 button[type="submit"]
@@ -32,7 +32,7 @@ button[type="submit"]
 	top:0.5cm;
 	background-color: silver
 }
-input[type="email"],input[type="password"]
+input[type="text"],input[type="password"]
 {
 	position: relative;
 	height:0.7cm;
@@ -45,16 +45,4 @@ table,td
 	line-height: 1cm;
 	font-weight: bold;
 
-}
-a.seller
-{
-	position: relative;
-	left:1.9cm;
-	top:0.8cm;
-}
-p
-{
-	position: relative;
-	left: 1.9cm;
-	top: 0.8cm;
 }
